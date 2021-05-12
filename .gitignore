@@ -43,7 +43,7 @@ node_modules/
 jspm_packages/
 
 # dist directories
-dist/
+# dist/
 
 
 # TypeScript v1 declaration files
