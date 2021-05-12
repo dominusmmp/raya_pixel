@@ -35,6 +35,12 @@ html::-webkit-scrollbar-track {
 }
 /* END: Scrollbar Styles */
 
+
+.logo {
+  width: 24px;
+  filter: brightness(100);
+}
+
 #nav-menu a.active {
   @apply md:border-yellow-500;
 }
