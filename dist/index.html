@@ -21,20 +21,13 @@
     <!-- END: CSS Assets -->
 
     <!-- BEGIN: Head JS Assets -->
-    <script>
-        // On page load or when changing themes, best to add inline in `head` to avoid FOUC
-        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-            document.documentElement.classList.add('dark')
-        } else {
-            document.documentElement.removeAttribute('class')
-        }
-    </script>
+
     <!-- END: Head JS Assets -->
 
     <!-- END: Default Head -->
-<script type="module" crossorigin src="./assets/index.6f060517.js"></script>
+<script type="module" crossorigin src="./assets/index.7a7fc0a5.js"></script>
   <link rel="modulepreload" href="./assets/vendor.2a613537.js">
-  <link rel="stylesheet" href="./assets/index.1ce3c88b.css">
+  <link rel="stylesheet" href="./assets/index.547bd5be.css">
 </head>
 
 <body>
@@ -46,9 +39,6 @@
             <span class="sr-only">Site Pre-Loader</span>
         </div> -->
         <!-- END: Loader -->
-
-        <!-- BEGIN: Header -->
-        <!-- END: Header -->
 
         <!-- BEGIN: Navbar -->
         <nav class="bg-theme-blue z-10">
@@ -65,7 +55,7 @@
                     <!-- END: Site Logo -->
 
                     <!-- BEGIN: Mobile Menu Button -->
-                    <a id="mobile-nav-btn" class="order-first cursor-pointer md:hidden" data-toggle="0">
+                    <a href="#" id="mobile-nav-btn" class="order-first md:hidden" data-toggle="0">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
                             class="feather feather-bar-chart-2 w-8 h-8 text-white transform -rotate-90">
@@ -79,11 +69,12 @@
 
                     <!-- BEGIN: Header Contact Buttons -->
                     <div class="flex justify-center items-center text-2xl text-gray-100 w-max md:order-last md:mr-auto">
-                        <a href="#" class="md:flex justify-between items-center hover:text-white hidden">
+                        <a href="https://wa.me/xxxxxxxxx"
+                            class="md:flex justify-between items-center hover:text-white w-8 h-8 hidden">
                             <i class="fab fa-whatsapp"></i>
                         </a>
-                        <a href="#" class="flex justify-between items-center hover:text-white">
-                            <i class="fal fa-phone-alt mr-4"></i>
+                        <a href="tel:982191304119" class="flex justify-between items-center hover:text-white w-8 h-8">
+                            <i class="fal fa-phone-alt md:mr-4"></i>
                         </a>
                     </div>
                     <!-- END: Header Contact Buttons -->
@@ -98,7 +89,7 @@
                         <!-- BEGIN: Nav Menu Items -->
                         <li>
                             <a href="#"
-                                class="flex justify-between items-center text-lg text-gray-100 hover:text-gray-200 md:px-3 mx-1 active">
+                                class="flex justify-between items-center text-lg text-gray-100 hover:text-gray-200 md:px-3 mx-1">
                                 <span>خانه</span>
                                 <i class="far fa-home md:hidden"></i>
                                 <span class="sr-only">Menu Item: Home</span>
@@ -141,7 +132,7 @@
         <!-- END: Navbar -->
 
         <!-- BEGIN: Main -->
-        <main class="">
+        <main>
             <section class="bg-theme-blue text-white pt-16 md:pt-8">
                 <div class="container mx-auto">
                     <div class="flex justify-between items-center flex-col md:flex-row">
@@ -149,8 +140,8 @@
                             <h1 class="text-2xl font-medium text-center md:text-right mb-6">شروعی تازه برای بازارچه‌های
                                 قدیمی</h1>
                             <p class="mb-6 text-lg font-light">
-                                طراحی وبسایت، ایجاد فروشگاه‌های آنلاین و راه‌اندازی بازارچه در شبکه‌های اجتماعی برخی از
-                                سرویس‌های رایاپیکسل است. حال شما با اعتماد به تیم فنی ما می‌توانید بر روی برندینگ و
+                                طراحی وبسایت، ایجاد فروشگاه‌های آنلاین و راه‌اندازی بازارچه در شبکه‌های اجتماعی فقط برخی
+                                از سرویس‌های رایاپیکسل هستند و شما با اعتماد به تیم فنی ما می‌توانید بر روی برندینگ و
                                 گسترش کسب و کار خود تمرکز داشته باشید.
                             </p>
                             <a href="#"
@@ -171,10 +162,6 @@
                     </svg>
                 </div>
             </section>
-            <article class="">
-                <h1 class="sr-only">Raya Pixel</h1>
-                .
-            </article>
         </main>
         <!-- END: Main -->
 

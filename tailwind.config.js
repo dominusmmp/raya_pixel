@@ -2,7 +2,7 @@ const plugin = require('tailwindcss/plugin')
 
 module.exports = {
   purge: ["*.html"],
-  darkMode: "class", // or 'media' or 'class'
+  darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
       container: {
@@ -24,30 +24,16 @@ module.exports = {
       maxWidth: {
         "screen": "100vw"
       },
-      minHeight: {
-        "nav": "76px",
-      },
       colors: {
         "theme": {
           "blue": "#005fff",
         },
-        "theme-dark": {
-          "body": "#232a3b",
-          "container": "#293145",
-          "card": "#313a55",
-          "text": "#e2e8f0"
-        }
       },
     },
   },
   variants: {
     extend: {
-      borderColor: ['hover'],
-      margin: ['ltr', 'rtl'],
-      padding: ['ltr', 'rtl'],
-      textAlign: ['ltr', 'rtl'],
-      inset: ['ltr', 'rtl'],
-      order: ['ltr', 'rtl'],
+
     },
   },
   plugins: [

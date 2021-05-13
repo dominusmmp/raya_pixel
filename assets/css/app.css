@@ -2,17 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-/* BEGIN: Default html, body Styles */
+/* BEGIN: Default Styles */
 html,
 body {
   @apply font-fa min-h-full;
 }
 
-/* html.dark {
-  @apply bg-theme-dark-body;
-} */
+a,
+button {
+  @apply cursor-default md:cursor-pointer;
+}
 
-/* END: Default html, body Styles */
+svg {
+  outline: none !important;
+}
+svg:hover {
+  outline: none !important;
+}
+svg:focus {
+  outline: none !important;
+}
+svg:active {
+  outline: none !important;
+}
+/* END: Default Styles */
 
 /* BEGIN: Scrollbar Styles */
 html {
@@ -43,35 +56,10 @@ html::-webkit-scrollbar-track {
   @apply mt-8 md:mt-0 !important;
 }
 
-/* #nav-menu {
-  @apply h-0;
-} */
-
 #nav-menu {
   @apply md:h-auto !important;
 }
 
 #nav-menu a.active {
   @apply md:border-yellow-500;
-}
-
-/* nav.navbar > ul {
-  transition: left 0.5s;
-}
-
-nav.navbar > ul.hide {
-  left: -100%;
-} */
-
-svg {
-  outline: none !important;
-}
-svg:hover {
-  outline: none !important;
-}
-svg:focus {
-  outline: none !important;
-}
-svg:active {
-  outline: none !important;
 }
