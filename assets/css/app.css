@@ -61,7 +61,7 @@ html::-webkit-scrollbar-track {
 
 nav.navbar > ul.hide {
   left: -100%;
-}
+} */
 
 svg {
   outline: none !important;
@@ -74,4 +74,4 @@ svg:focus {
 }
 svg:active {
   outline: none !important;
-} */
+}
