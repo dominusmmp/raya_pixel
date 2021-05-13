@@ -18,9 +18,6 @@ module.exports = {
       fontFamily: {
         "fa": ["Shabnam", "sans-serif"]
       },
-      width: {
-        "half": "50%"
-      },
       maxWidth: {
         "screen": "100vw"
       },
@@ -28,6 +25,9 @@ module.exports = {
         "nav": "76px",
       },
       colors: {
+        "theme": {
+          "blue": "#277cea",
+        },
         "theme-dark": {
           "body": "#232a3b",
           "container": "#293145",

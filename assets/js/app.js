@@ -36,9 +36,9 @@ feather.replace();
 
     mobileNavButton.addEventListener('click', function () {
         if (navMenu.offsetHeight == 0) {
-            Velocity(navMenu, { height: navHeight }, { duration: 500 });
+            Velocity(navMenu, { height: navHeight }, { duration: 250 });
         } else {
-            Velocity(navMenu, { height: 0 }, { duration: 500 });
+            Velocity(navMenu, { height: 0 }, { duration: 250 });
         }
     });
     /* END: Mobile Nav Menu */
