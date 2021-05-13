@@ -1,6 +1,5 @@
+import "./fontawesome"
 import Velocity from "velocity-animate";
-import feather from "feather-icons";
-feather.replace();
 
 (function () {
     'use strict'

@@ -1,1 +1,0 @@
-import{f as e,V as t}from"./vendor.e48d15fa.js";e.replace(),function(){let e=document.getElementById("nav-menu");document.getElementById("mobile-nav-btn").addEventListener("click",(function(){0==e.offsetHeight?t(e,{height:navHeight},{duration:250}):t(e,{height:0},{duration:250})}))}();

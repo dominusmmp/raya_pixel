@@ -15,6 +15,9 @@ module.exports = {
           '2xl': '10rem',
         },
       },
+      flex: {
+        "basis": "1 0 100%"
+      },
       fontFamily: {
         "fa": ["Shabnam", "sans-serif"]
       },
