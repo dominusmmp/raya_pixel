@@ -27,13 +27,18 @@ feather.replace();
     /* BEGIN: Mobile Nav Menu */
     let navMenu = document.getElementById('nav-menu');
     let mobileNavButton = document.getElementById('mobile-nav-btn');
+    // const navHeight = navMenu.offsetHeight;
+
+    // window.addEventListener('load', function () {
+    //     Velocity(navMenu, { height: 0 }, { duration: 0 });
+    //     mobileNavButton.dataset.toggle = '0';
+    // });
+
     mobileNavButton.addEventListener('click', function () {
-        if (this.dataset.toggle == '0') {
-            Velocity(navMenu, { height: 'auto' });
-            this.dataset.toggle = '1';
+        if (navMenu.offsetHeight == 0) {
+            Velocity(navMenu, { height: navHeight }, { duration: 500 });
         } else {
-            Velocity(navMenu, { height: 0 });
-            this.dataset.toggle = '0';
+            Velocity(navMenu, { height: 0 }, { duration: 500 });
         }
     });
     /* END: Mobile Nav Menu */

@@ -78,7 +78,7 @@
                     </div>
                     <!-- BEGIN: Nav Menu -->
                     <ul id="nav-menu"
-                        class="md:flex justify-center items-center w-full md:w-auto pt-8 md:pt-0 space-y-4 md:space-y-0 h-0 md:h-auto overflow-hidden">
+                        class="md:flex justify-center items-center w-full md:w-auto space-y-4 md:space-y-0 overflow-hidden">
                         <!-- BEGIN: Nav Menu Items -->
                         <li>
                             <a href="#"
@@ -125,6 +125,10 @@
                     <!-- END: Nav Menu -->
                 </div>
             </div>
+            <script>
+                const navHeight = document.getElementById('nav-menu').offsetHeight;
+                document.getElementById('nav-menu').style.height = 0;
+            </script>
         </nav>
         <!-- END: Navbar -->
 

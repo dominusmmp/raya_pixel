@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 /* BEGIN: Default html, body Styles */
 html,
 body {
@@ -35,10 +34,21 @@ html::-webkit-scrollbar-track {
 }
 /* END: Scrollbar Styles */
 
-
 .logo {
   width: 24px;
   filter: brightness(100);
+}
+
+#nav-menu li:first-of-type {
+  @apply mt-8 md:mt-0 !important;
+}
+
+/* #nav-menu {
+  @apply h-0;
+} */
+
+#nav-menu {
+  @apply md:h-auto !important;
 }
 
 #nav-menu a.active {
