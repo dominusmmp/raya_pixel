@@ -26,7 +26,14 @@ module.exports = {
       },
       colors: {
         "theme": {
-          "blue": "#005fff",
+          "blue": {
+            DEFAULT: "#005fff",
+            "1": "#5C4789",
+          },
+          "pink": {
+            "1": "#EDC2D4",
+            "2": "#FF96DD",
+        },
         },
       },
     },

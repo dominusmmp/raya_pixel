@@ -1,4 +1,5 @@
 import "./fontawesome";
+import "./skip-link-focus-fix";
 import Velocity from "velocity-animate";
 
 (function () {
