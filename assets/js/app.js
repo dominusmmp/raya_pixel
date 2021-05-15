@@ -38,6 +38,6 @@ import Velocity from "velocity-animate";
             fadeOut(el);
         });
     }
-    // preLoader('preloader');
+    preLoader('preloader');
     /* END: Preloader */
 })();

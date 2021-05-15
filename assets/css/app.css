@@ -63,3 +63,36 @@ html::-webkit-scrollbar-track {
 #nav-menu a.active {
   @apply lg:border-yellow-500;
 }
+
+.project-slider {
+  transform: translateX(312px);
+  animation: moveSlideleft 100s linear infinite;
+}
+
+.project-slider li div.rotate3D {
+  transform: rotate3d(1, 2, 3, 5deg);
+}
+
+.project-slider li div.nrotate3D {
+  transform: rotate3d(1, 2, 3, -5deg);
+}
+
+.project-slider li div:hover {
+  transform: rotate3d(0, 0, 0, 0);
+}
+
+.project-slider li div:hover img {
+  animation: moveSlideup 10s linear;
+}
+
+@keyframes moveSlideleft {
+  100% {
+    transform: translateX(-100vw);
+  }
+}
+
+@keyframes moveSlideup {
+  100% {
+    transform: translateY(-50%);
+  }
+}
