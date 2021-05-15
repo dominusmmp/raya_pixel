@@ -10,7 +10,7 @@ body {
 
 a,
 button {
-  @apply cursor-default md:cursor-pointer;
+  @apply cursor-default lg:cursor-pointer;
 }
 
 svg {
@@ -53,13 +53,13 @@ html::-webkit-scrollbar-track {
 }
 
 #nav-menu li:first-of-type {
-  @apply mt-8 md:mt-0 !important;
+  @apply mt-8 lg:mt-0 !important;
 }
 
 #nav-menu {
-  @apply md:h-auto !important;
+  @apply lg:h-auto !important;
 }
 
 #nav-menu a.active {
-  @apply md:border-yellow-500;
+  @apply lg:border-yellow-500;
 }
