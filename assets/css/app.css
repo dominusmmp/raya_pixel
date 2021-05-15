@@ -64,10 +64,20 @@ html::-webkit-scrollbar-track {
   @apply lg:border-yellow-500;
 }
 
-.project-slider {
+/* .project-slider {
   transform: translateX(100%);
-  animation: moveSlideleft 50s linear infinite;
+  animation: moveSlideleft 70s linear infinite;
 }
+
+.project-slider:hover {
+  animation-play-state: paused;
+}
+
+@keyframes moveSlideleft {
+  100% {
+    transform: translateX(-100vw);
+  }
+} */
 
 .project-slider li:nth-child(odd) a {
   transform: rotate3d(1, 2, 3, 5deg);
@@ -83,12 +93,6 @@ html::-webkit-scrollbar-track {
 
 .project-slider li a:hover img {
   animation: moveSlideup 10s linear infinite;
-}
-
-@keyframes moveSlideleft {
-  100% {
-    transform: translateX(-100vw);
-  }
 }
 
 @keyframes moveSlideup {
