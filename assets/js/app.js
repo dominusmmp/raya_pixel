@@ -1,6 +1,7 @@
 import "./fontawesome";
 import "./skip-link-focus-fix";
 import Velocity from "velocity-animate";
+import emailjs from "emailjs-com";
 
 (function () {
     'use strict';
@@ -40,4 +41,26 @@ import Velocity from "velocity-animate";
     }
     preLoader('preloader');
     /* END: Preloader */
+
+    // EmailJs
+    emailjs.init("user_NTiDkqUqnCXi38y62iAVC");
+    // const btn = document.getElementById('contact-send');
+    document.getElementById('contact-form').addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        // btn.value = 'Sending...';
+
+        const serviceID = 'service_9p4lr2g';
+        const templateID = 'template_n59zuvr';
+
+        emailjs.sendForm(serviceID, templateID, this)
+            .then(() => {
+                // btn.value = 'Send Email';
+                alert('Sent!');
+            }, (err) => {
+                // btn.value = 'Send Email';
+                alert(JSON.stringify(err));
+            });
+    });
+
 })();

@@ -17,5 +17,7 @@
     "velocity-animate": "^2.0.6",
     "vite": "^2.2.3"
   },
-  "dependencies": {}
+  "dependencies": {
+    "emailjs-com": "^2.6.4"
+  }
 }
