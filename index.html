@@ -85,14 +85,6 @@
                         class="lg:flex justify-center items-center w-full lg:w-auto space-y-4 lg:space-y-0 overflow-hidden lg:mr-8">
                         <!-- BEGIN: Nav Menu Items -->
                         <li>
-                            <a href="#"
-                                class="flex justify-between items-center text-lg text-gray-100 hover:text-gray-200 lg:px-3 mx-1">
-                                <span>خانه</span>
-                                <i class="far fa-home lg:hidden"></i>
-                                <span class="sr-only">Menu Item: Home</span>
-                            </a>
-                        </li>
-                        <li>
                             <a href="#services"
                                 class="flex justify-between items-center text-lg text-gray-100 hover:text-gray-200 lg:px-3 mx-1">
                                 <span>خدمات</span>
@@ -131,7 +123,7 @@
         <!-- BEGIN: Main -->
         <main>
             <!-- BEGIN: Hero Section -->
-            <section class="bg-theme-blue text-white pt-16 lg:pt-8">
+            <section id="hero" class="bg-theme-blue text-white pt-16 lg:pt-8">
                 <div class="container mx-auto">
                     <div class="flex justify-between items-center flex-col lg:flex-row">
                         <div class="lg:w-5/12">
@@ -169,7 +161,7 @@
             <!-- END: Hero Section -->
 
             <!-- BEGIN: Services Section -->
-            <section id="#services" class="pt-16 lg:pt-8">
+            <section id="services" class="pt-16 lg:pt-8">
                 <div class="container mx-auto">
                     <div class="flex justify-center items-center flex-col">
                         <h2 class="text-2xl font-medium mb-6">
@@ -179,7 +171,7 @@
                     </div>
                     <div class="flex flex-wrap justify-center items-center flex-col lg:flex-row mt-6">
                         <div class="w-full lg:w-4/12">
-                            <div
+                            <a href="#web_design"
                                 class="flex justify-center items-center rounded-lg shadow hover:shadow-lg m-2 p-4 transition-shadow border">
                                 <div class="w-4/12 lg:w-3/12 flex justify-center items-center ml-2">
                                     <img src="./assets/img/data.png" alt="">
@@ -192,10 +184,10 @@
                                         تلفیق هنر با کسب و کارهای آنلاین
                                     </p>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                         <div class="w-full lg:w-4/12">
-                            <div
+                            <a href="#online_store"
                                 class="flex justify-center items-center rounded-lg shadow hover:shadow-lg m-2 p-4 transition-shadow border">
                                 <div class="w-4/12 lg:w-3/12 flex justify-center items-center ml-2">
                                     <img src="./assets/img/restaurant.png" alt="">
@@ -208,7 +200,23 @@
                                         از یک بازار محدود تا رشد کسب و کار شما در اینترنت
                                     </p>
                                 </div>
-                            </div>
+                            </a>
+                        </div>
+                        <div class="w-full lg:w-4/12">
+                            <a href="#insta_store"
+                                class="flex justify-center items-center rounded-lg shadow hover:shadow-lg m-2 p-4 transition-shadow border">
+                                <div class="w-4/12 lg:w-3/12 flex justify-center items-center ml-2">
+                                    <img src="./assets/img/love.png" alt="">
+                                </div>
+                                <div class="w-8/12 lg:w-9/12 flex flex-col justify-center">
+                                    <h3 class="text-lg font-medium mb-2">
+                                        راه‌اندازی بازارچه در اینستاگرام
+                                    </h3>
+                                    <p class="text-sm">
+                                        ویترین فروشگاهت رو به تمام دنیا نشون بده
+                                    </p>
+                                </div>
+                            </a>
                         </div>
                         <div class="w-full lg:w-4/12">
                             <div
@@ -238,22 +246,6 @@
                                     </h3>
                                     <p class="text-sm">
                                         افزایش رونق کسب و کار با گوگل
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="w-full lg:w-4/12">
-                            <div
-                                class="flex justify-center items-center rounded-lg shadow hover:shadow-lg m-2 p-4 transition-shadow border">
-                                <div class="w-4/12 lg:w-3/12 flex justify-center items-center ml-2">
-                                    <img src="./assets/img/love.png" alt="">
-                                </div>
-                                <div class="w-8/12 lg:w-9/12 flex flex-col justify-center">
-                                    <h3 class="text-lg font-medium mb-2">
-                                        راه‌اندازی بازارچه در اینستاگرام
-                                    </h3>
-                                    <p class="text-sm">
-                                        ویترین فروشگاهت رو به تمام دنیا نشون بده
                                     </p>
                                 </div>
                             </div>
@@ -327,8 +319,8 @@
             </section>
             <!-- END: Services Section -->
 
-            <!-- BEGIN: Info 1 Section -->
-            <section class="bg-theme-pink-1 mt-16 lg:mt-8">
+            <!-- BEGIN: Web Design Section -->
+            <section id="web_design" class="bg-theme-pink-2 mt-16 lg:mt-8">
                 <div class="flex justify-center items-center h-12 lg:h-24">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" preserveAspectRatio="none"
                         style="height: 100%; width: 100%; transform: rotateX(180deg);">
@@ -340,13 +332,10 @@
                     <div class="flex justify-between items-center flex-col lg:flex-row py-12">
                         <div class="lg:w-6/12 lg:pr-4">
                             <h2 class="text-2xl font-medium text-center lg:text-right mb-6">
-                                تخصص ما در هویت بخشی به کسب و کار و شرکت شماست
+                                طراحی وبسایت
                             </h2>
                             <p class="mb-6 text-lg font-light">
-                                اگر به دنبال هویت بخشی به شرکت و کسب و کار خود هستید یکی از بهترین و کارآمدترین راه ها
-                                داشتن وب سایت مفید و کارآمد است. می توانید با طراحی سایت کارآمد تخصص و خدمات خود را به
-                                بهترین نحو به همگان معرفی کنید. با سایت شرکتی می توانید به صورت 24 ساعته و در هفت روز
-                                هفته با مشتریان خود در ارتباط باشید و از خدمات خود پشتیبانی کنید.
+                                تلفیق هنر با کسب و کارهای آنلاین
                             </p>
                         </div>
                         <div class="lg:w-6/12 lg:order-first">
@@ -355,21 +344,18 @@
                     </div>
                 </div>
             </section>
-            <!-- END: Info 1 Section -->
+            <!-- END: Web Design Section -->
 
-            <!-- BEGIN: Info 2 Section -->
-            <section class="bg-theme-blue-1 text-white pt-16 lg:pt-8">
+            <!-- BEGIN: Online Store Section -->
+            <section id="online_store" class="bg-theme-blue-1 text-white pt-16 lg:pt-8">
                 <div class="container mx-auto">
                     <div class="flex justify-between items-center flex-col lg:flex-row py-12">
                         <div class="lg:w-6/12 lg:pl-4">
                             <h2 class="text-2xl font-medium text-center lg:text-right mb-6">
-                                فروش خود را متحول کنید
+                                راه‌اندازی فروشگاه آنلاین
                             </h2>
                             <p class="mb-6 text-lg font-light">
-                                لازم نیست برای شروع یا ادامه کسب و کار خود یک دفتر یا مغازه بزرگ و پر هزینه داشته باشید!
-                                با طراحی سایت فروشگاهی در سریع ترین زمان فروشگاه اینترنتی خود را تحویل گرفته و از خدمات
-                                آموزش و پشتیبانی رایگان پیشرودیتا بهره مند شوید. ما همراه شما هستیم تا کسب و کار آنلاین
-                                خود را به حرفه ای ترین شکل ممکن راه اندازی و اداره کنید.
+                                از یک بازار محدود تا رشد کسب و کار شما در اینترنت
                             </p>
                         </div>
                         <div class="lg:w-6/12">
@@ -385,10 +371,10 @@
                     </svg>
                 </div>
             </section>
-            <!-- END: Info 2 Section -->
+            <!-- END: Online Store Section -->
 
             <!-- BEGIN: Projects Section -->
-            <section id="#services" class="py-16 lg:py-8">
+            <section id="projects" class="py-16 lg:py-8">
                 <div class="container mx-auto">
                     <div class="flex justify-center items-center flex-col">
                         <h2 class="text-2xl font-medium mb-6">
@@ -422,8 +408,8 @@
             </section>
             <!-- END: Projects Section -->
 
-            <!-- BEGIN: Contact Section -->
-            <section class="bg-theme-pink-2 mt-16 lg:mt-8">
+            <!-- BEGIN: Instagram Store Section -->
+            <section id="insta_store" class="bg-theme-pink-2 mt-16 lg:mt-8">
                 <div class="flex justify-center items-center h-12 lg:h-24">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" preserveAspectRatio="none"
                         style="height: 100%; width: 100%; transform: rotateX(180deg);">
@@ -435,16 +421,36 @@
                     <div class="flex justify-between items-center flex-col lg:flex-row py-12">
                         <div class="lg:w-6/12 lg:pr-4">
                             <h2 class="text-2xl font-medium text-center lg:text-right mb-6">
+                                راه‌اندازی بازارچه در اینستاگرام
+                            </h2>
+                            <p class="mb-6 text-lg font-light">
+                                ویترین فروشگاهت رو به تمام دنیا نشون بده
+                            </p>
+                        </div>
+                        <div class="lg:w-6/12 lg:order-first">
+                            <img src="./assets/img/application.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- END: Instagram Store Section -->
+
+            <!-- BEGIN: Contact Section -->
+            <section id="contact" class="bg-theme-blue pt-16 lg:pt-8">
+                <div class="container mx-auto">
+                    <div class="flex justify-between items-center flex-col lg:flex-row py-12">
+                        <div class="lg:w-6/12 lg:pr-4">
+                            <h2 class="text-2xl font-medium text-center lg:text-right mb-6">
                                 سوالی دارید؟ منتظر پاسخگویی به شما هستیم!
                             </h2>
                             <form action="post" name="contact-form" id="contact-form">
-                                <input type="text" name="from_name" id="from_name" placeholder="name">
-                                <input type="text" name="message" id="message" placeholder="message">
+                                <input type="text" name="contact_from_name" id="contact_from_name" placeholder="name">
+                                <input type="text" name="contact_message" id="contact_message" placeholder="message">
                                 <button type="submit" id="contact-send">ارسال</button>
                             </form>
                         </div>
                         <div class="lg:w-6/12 lg:order-first">
-                            <img src="./assets/img/application.png" alt="">
+                            <img src="./assets/img/noftification.png" alt="">
                         </div>
                     </div>
                 </div>
