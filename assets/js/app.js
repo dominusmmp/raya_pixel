@@ -3,7 +3,7 @@ import "./skip-link-focus-fix";
 import Velocity from "velocity-animate";
 
 (function () {
-    'use strict'
+    'use strict';
 
     /* BEGIN: Mobile Nav Menu */
     let navMenu = document.getElementById('nav-menu');

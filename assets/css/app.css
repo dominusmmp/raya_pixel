@@ -79,19 +79,19 @@ html::-webkit-scrollbar-track {
   }
 } */
 
-.project-slider li:nth-child(odd) a {
+.project-slider li:nth-child(odd) div {
   transform: rotate3d(1, 2, 3, 5deg);
 }
 
-.project-slider li:nth-child(even) a {
+.project-slider li:nth-child(even) div {
   transform: rotate3d(1, 2, 3, -5deg);
 }
 
-.project-slider li a:hover {
+.project-slider li div:hover {
   transform: rotate3d(0, 0, 0, 0);
 }
 
-.project-slider li a:hover img {
+.project-slider li div:hover img {
   animation: moveSlideup 10s linear infinite;
 }
 
