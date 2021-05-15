@@ -33,7 +33,7 @@ module.exports = {
           "pink": {
             "1": "#EDC2D4",
             "2": "#FF96DD",
-        },
+          },
         },
       },
     },
