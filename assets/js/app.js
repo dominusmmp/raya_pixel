@@ -10,10 +10,12 @@ import Velocity from "velocity-animate";
     let mobileNavButton = document.getElementById('mobile-nav-btn');
     // 'navHeight' is defined in html source
 
-    mobileNavButton.addEventListener('click', function () {
+    mobileNavButton.addEventListener('click', function (e) {
         if (navMenu.offsetHeight == 0) {
+            e.preventDefault();
             Velocity(navMenu, { height: navHeight }, { duration: 250 });
         } else {
+            e.preventDefault();
             Velocity(navMenu, { height: 0 }, { duration: 250 });
         }
     });
