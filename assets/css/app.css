@@ -65,24 +65,24 @@ html::-webkit-scrollbar-track {
 }
 
 .project-slider {
-  transform: translateX(312px);
-  animation: moveSlideleft 100s linear infinite;
+  transform: translateX(100%);
+  animation: moveSlideleft 50s linear infinite;
 }
 
-.project-slider li div.rotate3D {
+.project-slider li:nth-child(odd) a {
   transform: rotate3d(1, 2, 3, 5deg);
 }
 
-.project-slider li div.nrotate3D {
+.project-slider li:nth-child(even) a {
   transform: rotate3d(1, 2, 3, -5deg);
 }
 
-.project-slider li div:hover {
+.project-slider li a:hover {
   transform: rotate3d(0, 0, 0, 0);
 }
 
-.project-slider li div:hover img {
-  animation: moveSlideup 10s linear;
+.project-slider li a:hover img {
+  animation: moveSlideup 10s linear infinite;
 }
 
 @keyframes moveSlideleft {
@@ -93,6 +93,6 @@ html::-webkit-scrollbar-track {
 
 @keyframes moveSlideup {
   100% {
-    transform: translateY(-50%);
+    transform: translateY(-30%);
   }
 }
