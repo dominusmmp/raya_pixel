@@ -2,6 +2,8 @@ import "./fontawesome";
 import "./skip-link-focus-fix";
 import Velocity from "velocity-animate";
 import emailjs from "emailjs-com";
+import Swal from "sweetalert2";
+import "sweetalert2/dist/sweetalert2.min.css";
 
 (function () {
     'use strict';
@@ -44,22 +46,32 @@ import emailjs from "emailjs-com";
 
     // EmailJs
     emailjs.init("user_NTiDkqUqnCXi38y62iAVC");
-    // const btn = document.getElementById('contact-send');
+    const btn = document.getElementById('contact-send');
     document.getElementById('contact-form').addEventListener('submit', function (e) {
         e.preventDefault();
 
-        // btn.value = 'Sending...';
+        btn.setAttribute('disabled', 'true');
 
         const serviceID = 'service_9p4lr2g';
         const templateID = 'template_n59zuvr';
 
         emailjs.sendForm(serviceID, templateID, this)
             .then(() => {
-                // btn.value = 'Send Email';
-                alert('Sent!');
+                btn.removeAttribute('disabled');
+                this.reset();
+                Swal.fire(
+                    'پیام شما با موفقت ارسال شد!',
+                    'به زودی با شما تماس خواهیم گرفت!',
+                    'success'
+                );
             }, (err) => {
-                // btn.value = 'Send Email';
-                alert(JSON.stringify(err));
+                btn.removeAttribute('disabled');
+                // alert(JSON.stringify(err));
+                Swal.fire(
+                    'ارسال پیام با خطا مواجه شد!',
+                    'لطفا مجددا تلاش نمایید!',
+                    'error'
+                );
             });
     });
 

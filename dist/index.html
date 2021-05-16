@@ -25,9 +25,9 @@
     <!-- END: Head JS Assets -->
 
     <!-- END: Default Head -->
-<script type="module" crossorigin src="/assets/index.2d4fa67e.js"></script>
-  <link rel="modulepreload" href="/assets/vendor.bbf489e3.js">
-  <link rel="stylesheet" href="/assets/index.a70129bb.css">
+<script type="module" crossorigin src="/assets/index.6c1b8e15.js"></script>
+  <link rel="modulepreload" href="/assets/vendor.a86d9993.js">
+  <link rel="stylesheet" href="/assets/index.4d64b862.css">
 </head>
 
 <body>
@@ -446,24 +446,34 @@
                             <h2 class="text-2xl font-medium text-center mb-10">
                                 سوالی دارید؟ منتظر پاسخگویی به شما هستیم!
                             </h2>
-                            <form action="post" name="contact-form" id="contact-form" class="bg-gray-50 flex flex-col max-w-md mx-auto p-10 bg-opacity-10 rounded-3xl border-2 border-transparent focus-within:border-white transition-all duration-500">
+                            <form action="post" name="contact-form" id="contact-form"
+                                class="bg-gray-50 flex flex-col max-w-md mx-auto p-10 bg-opacity-10 rounded-3xl border-2 border-transparent focus-within:border-white transition-all duration-500">
                                 <div class="w-full mb-4">
-                                    <input type="text" name="contact_from_name" id="contact_from_name"
-                                        placeholder="نام" class="w-full rounded-lg h-10 px-3 text-gray-600 focus:outline-none" required>
+                                    <input type="text" name="contact_from_name" id="contact_from_name" placeholder="نام"
+                                        class="w-full rounded-lg h-10 px-3 text-gray-600 focus:outline-none" required>
                                 </div>
                                 <div class="w-full mb-4">
-                                    <input type="email" name="contact_email" id="contact_email"
-                                        placeholder="ایمیل" class="w-full rounded-lg h-10 px-3 text-gray-600 focus:outline-none" required>
-                                </div>
-                                <div class="w-full mb-4">
-                                    <input type="tel" name="contact_phone" id="contact_phone"
-                                        placeholder="شماره تماس" class="w-full rounded-lg h-10 px-3 text-gray-600 focus:outline-none" required>
+                                    <input type="tel" name="contact_phone" id="contact_phone" placeholder="شماره تماس"
+                                        class="w-full rounded-lg h-10 px-3 text-gray-600 focus:outline-none" required>
                                 </div>
                                 <div class="w-full mb-4">
                                     <textarea rows="3" name="contact_message" id="contact_message"
-                                        placeholder="متن پیام" class="w-full rounded-lg px-3 text-gray-600 focus:outline-none" required></textarea>
+                                        placeholder="متن پیام"
+                                        class="w-full rounded-lg px-3 text-gray-600 focus:outline-none resize-none"
+                                        required></textarea>
                                 </div>
-                                <button type="submit" id="contact-send" class="w-max mx-auto bg-white bg-opacity-25 px-8 py-2 rounded-md transition-all duration-300 hover:bg-opacity-30">ارسال</button>
+                                <button type="submit" id="contact-send"
+                                    class="w-max mx-auto bg-white bg-opacity-25 px-8 py-2 rounded-md transition-all duration-300 hover:bg-opacity-30 flex justify-center items-center">
+                                    <svg class="hidden animate-spin -mr-1 ml-3 h-5 w-5 text-white"
+                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor"
+                                            stroke-width="4"></circle>
+                                        <path class="opacity-75" fill="currentColor"
+                                            d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z">
+                                        </path>
+                                    </svg>
+                                    ارسال
+                                </button>
                             </form>
                         </div>
                         <div class="lg:w-6/12">

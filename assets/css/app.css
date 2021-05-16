@@ -100,3 +100,10 @@ html::-webkit-scrollbar-track {
     transform: translateY(-30%);
   }
 }
+
+#contact-send:disabled {
+  @apply bg-opacity-20 !important;
+}
+#contact-send:disabled svg {
+  @apply block;
+}
