@@ -64,9 +64,9 @@ html::-webkit-scrollbar-track {
   @apply lg:border-yellow-500;
 }
 
-/* .project-slider {
+.project-slider {
   transform: translateX(100%);
-  animation: moveSlideleft 70s linear infinite;
+  animation: moveSlideleft 50s linear infinite;
 }
 
 .project-slider:focus-within {
@@ -77,8 +77,13 @@ html::-webkit-scrollbar-track {
   100% {
     transform: translateX(-100vw);
   }
-} */
-
+}
+@media (min-width: 1024px) {
+  .project-slider {
+    transform: none;
+    animation: none;
+  }
+}
 .project-slider li:nth-child(odd) div {
   transform: rotate3d(1, 2, 3, 5deg);
 }
