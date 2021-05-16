@@ -9,70 +9,82 @@ import "sweetalert2/dist/sweetalert2.min.css";
     'use strict';
 
     /* BEGIN: Mobile Nav Menu */
-    let navMenu = document.getElementById('nav-menu');
-    let mobileNavButton = document.getElementById('mobile-nav-btn');
-    // 'navHeight' is defined in html source
+    (function () {
+        'use strict';
 
-    mobileNavButton.addEventListener('click', function (e) {
-        if (navMenu.offsetHeight == 0) {
-            e.preventDefault();
-            Velocity(navMenu, { height: navHeight }, { duration: 250 });
-        } else {
-            e.preventDefault();
-            Velocity(navMenu, { height: 0 }, { duration: 250 });
-        }
-    });
+        let navMenu = document.getElementById('nav-menu');
+        let mobileNavButton = document.getElementById('mobile-nav-btn');
+        // 'navHeight' is defined in html source
+
+        mobileNavButton.addEventListener('click', function (e) {
+            if (navMenu.offsetHeight == 0) {
+                e.preventDefault();
+                Velocity(navMenu, { height: navHeight }, { duration: 250 });
+            } else {
+                e.preventDefault();
+                Velocity(navMenu, { height: 0 }, { duration: 250 });
+            }
+        });
+    })();
     /* END: Mobile Nav Menu */
 
     /* BEGIN: Preloader */
-    function preLoader(elID = String) {
-        function fadeOut(el) {
-            el.style.opacity = 1;
-            (function fade() {
-                if ((el.style.opacity -= .1) < 0) {
-                    el.style.display = "none";
-                } else {
-                    requestAnimationFrame(fade);
-                }
-            })();
-        };
-        window.addEventListener('load', function () {
-            let el = document.getElementById(elID);
-            fadeOut(el);
-        });
-    }
-    preLoader('preloader');
+    (function () {
+        'use strict';
+
+        function preLoader(elID = String) {
+            function fadeOut(el) {
+                el.style.opacity = 1;
+                (function fade() {
+                    if ((el.style.opacity -= .1) < 0) {
+                        el.style.display = "none";
+                    } else {
+                        requestAnimationFrame(fade);
+                    }
+                })();
+            };
+            window.addEventListener('load', function () {
+                let el = document.getElementById(elID);
+                fadeOut(el);
+            });
+        }
+        preLoader('preloader');
+    })();
     /* END: Preloader */
 
-    // EmailJs
-    emailjs.init("user_NTiDkqUqnCXi38y62iAVC");
-    const btn = document.getElementById('contact-send');
-    document.getElementById('contact-form').addEventListener('submit', function (e) {
-        e.preventDefault();
+    /* BEGIN: Contact Form EmailJs */
+    (function () {
+        'use strict';
 
-        btn.setAttribute('disabled', 'true');
+        emailjs.init("user_NTiDkqUqnCXi38y62iAVC");
+        const btn = document.getElementById('contact-send');
+        document.getElementById('contact-form').addEventListener('submit', function (e) {
+            e.preventDefault();
 
-        const serviceID = 'service_9p4lr2g';
-        const templateID = 'template_n59zuvr';
+            btn.setAttribute('disabled', 'true');
 
-        emailjs.sendForm(serviceID, templateID, this)
-            .then(() => {
-                btn.removeAttribute('disabled');
-                this.reset();
-                Swal.fire(
-                    'پیام شما با موفقت ارسال شد!',
-                    'به زودی با شما تماس خواهیم گرفت!',
-                    'success'
-                );
-            }, (err) => {
-                btn.removeAttribute('disabled');
-                // alert(JSON.stringify(err));
-                Swal.fire(
-                    'ارسال پیام با خطا مواجه شد!',
-                    'لطفا مجددا تلاش نمایید!',
-                    'error'
-                );
-            });
-    });
+            const serviceID = 'service_9p4lr2g';
+            const templateID = 'template_n59zuvr';
 
+            emailjs.sendForm(serviceID, templateID, this)
+                .then(() => {
+                    btn.removeAttribute('disabled');
+                    this.reset();
+                    Swal.fire(
+                        'پیام شما با موفقت ارسال شد!',
+                        'به زودی با شما تماس خواهیم گرفت!',
+                        'success'
+                    );
+                }, (err) => {
+                    btn.removeAttribute('disabled');
+                    // alert(JSON.stringify(err));
+                    Swal.fire(
+                        'ارسال پیام با خطا مواجه شد!',
+                        'لطفا مجددا تلاش نمایید!',
+                        'error'
+                    );
+                });
+        });
+    })();
+    /* END: Contact Form EmailJs */
 })();
