@@ -4,9 +4,12 @@ import Velocity from "velocity-animate";
 import emailjs from "emailjs-com";
 import Swal from "sweetalert2";
 import "sweetalert2/dist/sweetalert2.min.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 (function () {
     'use strict';
+    AOS.init();
 
     /* BEGIN: Mobile Nav Menu */
     (function () {

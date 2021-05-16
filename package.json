@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "aos": "^2.3.4",
     "autoprefixer": "^10.2.5",
     "emailjs-com": "^2.6.4",
     "postcss": "^8.2.13",
@@ -20,6 +21,5 @@
     "velocity-animate": "^2.0.6",
     "vite": "^2.2.3"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
