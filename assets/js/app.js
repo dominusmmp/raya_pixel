@@ -9,6 +9,7 @@ import "aos/dist/aos.css";
 
 (function () {
     'use strict';
+
     AOS.init();
 
     /* BEGIN: Mobile Nav Menu */
@@ -90,4 +91,5 @@ import "aos/dist/aos.css";
         });
     })();
     /* END: Contact Form EmailJs */
+
 })();
