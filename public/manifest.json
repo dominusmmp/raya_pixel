@@ -6,7 +6,7 @@
     "scope": "/",
     "display": "standalone",
     "start_url": "/",
-    "background_color": "#000000",
+    "background_color": "#fff",
     "theme_color": "#005fff",
     "description": "با اعتماد به خدمات رایاپیکسل اعم از طراحی وبسایت، راه‌اندازی فروشگاه آنلاین و ایجاد بازارچه‌های اینستاگرامی  می‌توانید بر روی گسترش کسب و کار خود تمرکز کنید",
     "orientation": "any",
