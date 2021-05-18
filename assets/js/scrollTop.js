@@ -49,7 +49,7 @@
             document.addEventListener('scroll', function () {
                 let w = window.innerWidth;
                 let y = document.documentElement.scrollTop;
-                if (y > 300 && w > 768) {
+                if (y > 300) {
                     if (scrollTopEl.style.display == 'none') {
                         fadeIn(scrollTopEl, "flex");
                     }
