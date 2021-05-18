@@ -4,7 +4,7 @@
     function scrollTop(txtColor, bgColor) {
         window.addEventListener('load', function () {
             let scrollTopBtn = document.createElement("div");
-            scrollTopBtn.style = 'display: none; justify-content: center; align-items: center; position:fixed; bottom: 48px; right: 48px; width: 2.5rem; height: 2.5rem; border-radius: 9999px; font-size:1.5rem; line-height: 2rem; cursor: pointer; user-select: none';
+            scrollTopBtn.style = 'z-index: 10; display: none; justify-content: center; align-items: center; position:fixed; bottom: 48px; right: 48px; width: 2.5rem; height: 2.5rem; border-radius: 9999px; font-size:1.5rem; line-height: 2rem; cursor: pointer; user-select: none';
             scrollTopBtn.style.backgroundColor = bgColor || '#005fff';
             scrollTopBtn.style.color = txtColor || '#fff';
             scrollTopBtn.setAttribute('id', 'scrollTop');

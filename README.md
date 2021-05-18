@@ -10,3 +10,10 @@ or<br />
 
 # Build Production
 <code>npm run build</code>
+
+# To Do
+- Fixing responsive nav without reload
+- Create partial components
+- Add swipe slide feature to sample works slider
+- Optimize assets
+- Create wordpress version
