@@ -1,5 +1,6 @@
-
 (function () {
+    'use strict';
+
     function scrollTop(txtColor, bgColor) {
         window.addEventListener('load', function () {
             let scrollTopBtn = document.createElement("div");
