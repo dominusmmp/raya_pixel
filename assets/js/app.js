@@ -6,6 +6,7 @@ import Swal from "sweetalert2";
 import "sweetalert2/dist/sweetalert2.min.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import "./scrollTop";
 
 (function () {
     'use strict';

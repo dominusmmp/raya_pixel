@@ -17,7 +17,7 @@
     <link href="./assets/img/logo.ico" rel="shortcut icon" />
     <title>رایاپیکسل</title>
     <link rel="home" href="https://rayapixel.com" />
-    <link rel="manifest" href="/manifest.json" />
+    <link rel="manifest" href="/pwa/manifest.json" />
     <!-- END: HTML Meta Tags -->
 
     <!-- BEGIN: Facebook Meta Tags -->
@@ -639,8 +639,8 @@
             </div>
         </footer>
         <!-- END: Footer -->
+        
     </div>
-
     <script type="module" src="./assets/js/app.js"></script>
     <script>
         window.addEventListener('load', () => {
@@ -653,7 +653,7 @@
                 try {
                     await navigator
                         .serviceWorker
-                        .register('/sw.js');
+                        .register('/pwa/sw.js');
                 }
                 catch (e) {
                     console.log('SW registration failed');
