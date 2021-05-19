@@ -6,7 +6,7 @@ import Swal from "sweetalert2";
 import "sweetalert2/dist/sweetalert2.min.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import "./scrollTop";
+import { scrollTop } from "./scrollTop";
 
 (function () {
     'use strict';
@@ -93,4 +93,18 @@ import "./scrollTop";
     })();
     /* END: Contact Form EmailJs */
 
+    /* BEGIN: Scroll To Top Button */
+    scrollTop({
+        txtColor: '#fff',
+        bgColor: 'rgba(0, 94, 255, 0.5)',
+        borderRadius: '8px',
+        size: '54px',
+        position: {
+            top: 'unset',
+            right: '8px',
+            bottom: '8px',
+            left: 'unset',
+        }
+    });
+    /* END: Scroll To Top Button */
 })();
