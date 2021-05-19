@@ -11,7 +11,9 @@ import { scrollTop } from "./scrollTop";
 (function () {
     'use strict';
 
+    /* BEGIN: AOS Animate */
     AOS.init();
+    /* END: AOS Animate */
 
     /* BEGIN: Mobile Nav Menu */
     (function () {

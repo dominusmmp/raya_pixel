@@ -3,7 +3,8 @@
 function scrollTop(options = { txtColor: '', bgColor: '', size: '', borderRadius: '', position: { top: '', right: '', bottom: '', left: '' } }) {
     window.addEventListener('load', function () {
         let scrollTopBtn = document.createElement("div");
-        scrollTopBtn.style = 'z-index: 10; display: none; justify-content: center; align-items: center; position:fixed; font-size:1.5rem; line-height: 2rem; cursor: pointer; user-select: none';
+        scrollTopBtn.style = 'z-index: 10; display: none; justify-content: center; align-items: center; position:fixed; font-size:1.5rem; line-height: 2rem; user-select: none';
+        scrollTopBtn.style.cursor = (window.innerWidth >= 1024) ? 'pointer' : 'unset';
         scrollTopBtn.style.color = options.txtColor || '#fff';
         scrollTopBtn.style.backgroundColor = options.bgColor || 'rgba(0, 94, 255, 0.5)';
         scrollTopBtn.style.borderRadius = options.borderRadius || '9999px';
@@ -54,7 +55,7 @@ function scrollTop(options = { txtColor: '', bgColor: '', size: '', borderRadius
 
         // Scroll To Top Float Icon Show/Hide
         document.addEventListener('scroll', function () {
-            let w = window.innerWidth;
+            // let w = window.innerWidth;
             let y = document.documentElement.scrollTop;
             if (y > 300) {
                 if (scrollTopEl.style.display == 'none') {
