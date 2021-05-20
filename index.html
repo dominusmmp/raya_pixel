@@ -17,7 +17,7 @@
     <link href="./assets/img/logo.ico" rel="shortcut icon" />
     <title>رایاپیکسل</title>
     <link rel="home" href="https://rayapixel.com" />
-    <link rel="manifest" href="/pwa/manifest.json" />
+    <link rel="manifest" href="./manifest.json" />
     <!-- END: HTML Meta Tags -->
 
     <!-- BEGIN: Facebook Meta Tags -->
@@ -656,7 +656,7 @@
                 try {
                     await navigator
                         .serviceWorker
-                        .register('/pwa/sw.js');
+                        .register('./sw.js');
                 }
                 catch (e) {
                     console.log('SW registration failed');
