@@ -5,7 +5,11 @@
 /* BEGIN: Default Styles */
 html,
 body {
-  @apply font-fa min-h-full overflow-x-hidden max-w-screen;
+  @apply font-fa min-h-full max-w-screen;
+}
+
+.app {
+  @apply max-w-screen overflow-x-hidden;
 }
 
 a,
