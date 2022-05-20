@@ -3,9 +3,9 @@
     "lang": "fa-IR",
     "name": "رایاپیکسل",
     "short_name": "رایاپیکسل",
-    "scope": "/",
+    "scope": "./",
     "display": "standalone",
-    "start_url": "/",
+    "start_url": "./",
     "background_color": "#fff",
     "theme_color": "#005fff",
     "description": "با اعتماد به خدمات رایاپیکسل اعم از طراحی وبسایت، راه‌اندازی فروشگاه آنلاین و ایجاد بازارچه‌های اینستاگرامی  می‌توانید بر روی گسترش کسب و کار خود تمرکز کنید",
@@ -14,22 +14,22 @@
     "prefer_related_applications": false,
     "icons": [
         {
-            "src": "/pwa/icon-192x192.png",
+            "src": "./pwa/icons/icon-192x192.png",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "/pwa/icon-256x256.png",
+            "src": "./pwa/icons/icon-256x256.png",
             "sizes": "256x256",
             "type": "image/png"
         },
         {
-            "src": "/pwa/icon-384x384.png",
+            "src": "./pwa/icons/icon-384x384.png",
             "sizes": "384x384",
             "type": "image/png"
         },
         {
-            "src": "/pwa/icon-512x512.png",
+            "src": "./pwa/icons/icon-512x512.png",
             "sizes": "512x512",
             "type": "image/png"
         }

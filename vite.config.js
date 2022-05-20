@@ -1,5 +1,7 @@
 export default {
     build: {
-        assetsInlineLimit: 0
-    }
+        assetsInlineLimit: 0,
+        sourcemap: true
+    },
+    base: "./"
 }

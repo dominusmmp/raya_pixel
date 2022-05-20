@@ -1,19 +1,24 @@
-var staticCacheName = "pwa";
+importScripts('./pwa/js/workbox-sw.js');
 
-self.addEventListener("install", function (e) {
-    e.waitUntil(
-        caches.open(staticCacheName).then(function (cache) {
-            return cache.addAll(["/"]);
-        })
-    );
+const CACHE = "pwabuilder-offline";
+const QUEUE_NAME = "bgSyncQueue";
+
+self.addEventListener("message", (event) => {
+  if (event.data && event.data.type === "SKIP_WAITING") {
+    self.skipWaiting();
+  }
 });
 
-self.addEventListener("fetch", function (event) {
-    console.log(event.request.url);
-
-    event.respondWith(
-        caches.match(event.request).then(function (response) {
-            return response || fetch(event.request);
-        })
-    );
+const bgSyncPlugin = new workbox.backgroundSync.BackgroundSyncPlugin(QUEUE_NAME, {
+  maxRetentionTime: 1 // Retry for max of 24 Hours (specified in minutes)
 });
+
+workbox.routing.registerRoute(
+  new RegExp('/*'),
+  new workbox.strategies.StaleWhileRevalidate({
+    cacheName: CACHE,
+    plugins: [
+      bgSyncPlugin
+    ]
+  })
+);
